@@ -1,8 +1,13 @@
 import './globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins(
+    {
+      subsets: ['latin'], 
+      weight: ['300','400','500','600'],
+    }
+  )
 
 export const metadata: Metadata = {
   title: 'Arthur Perone - Portifólio',
@@ -16,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }

@@ -1,5 +1,8 @@
 :root {
-  --primary-color: #333;
+  --text-primary: #eee;
+  --text-secondary: #aaa;
+  --bg-primary: #1d1d1d;
+  --bg-secondary: #2c2c2c;
 }
 
 
@@ -11,6 +14,8 @@
 
 html,
 body {
+  background: linear-gradient(var(--bg-secondary), var(--bg-primary));
+  min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
 }

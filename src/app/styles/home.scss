@@ -1,0 +1,14 @@
+.mainPage{
+    padding: 40px 0;
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+
+    grid-template-areas: 
+    "presentation"
+    "buttons"
+    "projects"
+    "tecnologies"
+    "education";
+}
