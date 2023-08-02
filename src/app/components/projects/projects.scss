@@ -1,0 +1,65 @@
+.projects{
+    display: block;
+    grid-area: projects;
+    .works{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+        .work{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "title title"
+            "img img"
+            "repo page";
+            width: 90%;
+            text-align: center;
+            gap: 5px;
+            h2{
+                grid-area: title;
+            }
+            img{
+                grid-area: img;
+                margin: 5px auto;
+                width: 90vw;
+            }
+            button{
+                border: 0;
+                height: 2rem;
+                background-color: var(--btn-bg);
+                color: var(--btn-text);
+            }
+            .repository{
+                grid-area: repo;
+            }
+            .page{
+                grid-area: page;
+            }
+        }
+
+        @media (min-width:1080px) {
+            grid-template-columns: repeat(3, 1fr);
+            .work{
+                padding: 5px;
+                img{
+                    width: 95%;
+                    border: 3px solid white;
+                }
+                button{
+                    margin: auto;
+                    width: 80%;
+                    
+                }
+                button:hover{
+                    cursor: pointer;
+                    font-weight: bolder;
+                    background-color: var(--btn-bg-hover);
+                    color: var(--btn-text-hover);
+                }
+
+            }
+        }
+    }
+}
