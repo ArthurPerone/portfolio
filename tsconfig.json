@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -13,8 +14,8 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    //"moduleResolution": "bundler",
-    //"resolveJsonModule": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
@@ -28,8 +29,6 @@
         "./src/*"
       ]
     },
-    "moduleResolution": "node",
-    "resolveJsonModule": true
   },
   "include": [
     "next-env.d.ts",

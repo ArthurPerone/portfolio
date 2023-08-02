@@ -1,6 +1,5 @@
-import { SectionTitle } from "../sectionTitle/sectionTitle"
-import { ItemTitle } from "../sectionTitle/itemTitle"
-
+import { SectionTitle } from "../title/sectionTitle"
+import { ItemTitle } from "../title/itemTitle"
 
 import "./projects.scss"
 
