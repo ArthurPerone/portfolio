@@ -1,15 +1,31 @@
 .mainPage{
-    padding: 40px 0;
     text-align: center;
-
     gap:24px;
     display: grid;
-    grid-template-rows: repeat(5,auto);
-
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
-    "presentation"
-    "buttons"
-    "projects"
-    "tecnologies"
-    "education";
+        "presentation"
+        "buttons"
+        "projects"
+        "education"
+        "technologies"
+        "credits";
+
+    @media (min-width:1080px) {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "presentation presentation"
+        "buttons buttons"
+        "projects projects"
+        "education technologies"
+        "credits credits";
+    }
+
+    .credits{
+        grid-area: credits;
+        font-size: 20px;
+        font-style: italic;
+        color: var(--text-secondary);
+    }
 }

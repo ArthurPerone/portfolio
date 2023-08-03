@@ -1,0 +1,46 @@
+.technologies{
+    grid-area: technologies;
+    .techsList{
+        display: grid;
+        grid-template-columns: 1fr;
+        .tech{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            svg{
+                width: 80%;
+                height: 100%;
+                max-height: 300px;
+            }
+            p{
+                color: var(--text-primary);
+            }
+        }
+    }
+
+    @media (min-width:1080px) {
+        .techsList{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            .tech{
+                max-height: 700px;
+                svg{
+                    width: 300px;
+                    filter: saturate(0);
+                }
+                :hover{
+                    filter: saturate(1);
+                    ~p{
+                        display: block;
+                    }
+                }
+
+                p{
+                    color: var(--text-primary);
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}

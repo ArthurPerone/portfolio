@@ -1,26 +1,24 @@
-import {Presentation} from './components/presentation/presentation'
-import {Projects} from './components/projects/projects'
-import {Buttons} from './components/buttons/buttons'
+import { Presentation } from './components/presentation/presentation'
+import { Projects } from './components/projects/projects'
+import { Buttons } from './components/buttons/buttons'
+import { Education } from './components/education/education'
 
 import "./styles/home.scss"
+import { Technologies } from './components/technologies/technologies'
 
 export default function Home() {
   return (
     <main className='mainPage'>
       <Presentation />
       <Projects />
-      <div className="container">
-        <div className="education">
-          <h1>Formação</h1>
-          <p>Análise e Desenvolvimento de Sistemas 
-            <span>Fatec São Caetano do Sul - Antônio Russo</span>
-          </p>
-        </div>
-        <div className="tecnologies">
-          <h1>Tecnologias</h1>
-        </div>
-      </div>
+      <Education />
+      <Technologies />
+
       <Buttons />
+
+      <div className="credits">
+        Desenvolvido por Arthur Perone
+      </div>
     </main>
   )
 }
