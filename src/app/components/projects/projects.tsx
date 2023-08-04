@@ -70,7 +70,9 @@ export function Projects(){
     return(
         <div className="projects">
             <SectionTitle text={secTitle}></SectionTitle>
-            <div className="works" children={work()}></div>
+            <div className="works">
+                {work()}
+            </div>
         </div>
     )
 }
