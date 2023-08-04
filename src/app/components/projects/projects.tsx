@@ -15,8 +15,8 @@ export function Projects(){
         },
         'qrCode':{
             imgSrc:'/projects/gerador-QRCode.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'https://github.com/ArthurPerone/QrCode-Generator',
+            pagSrc:'https://qr-code-generator-nine-tau.vercel.app',
             title:'Gerador de QR-Code',
         },
         'autenticador': {
