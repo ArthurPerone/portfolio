@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { SectionTitle } from "../title/sectionTitle"
 import { ItemTitle } from "../title/itemTitle"
 
@@ -7,8 +9,8 @@ export function Projects(){
     const works = {
         'calculadora':{
             imgSrc:'/projects/calculadora.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'https://github.com/ArthurPerone/calculadora',
+            pagSrc:'https://calculadora-phi-brown.vercel.app',
             title:'Calculadora',
         },
         'qrCode':{
@@ -48,9 +50,15 @@ export function Projects(){
             listWorks.push(
                 <div className="work">
                     <ItemTitle text={works[work].title}></ItemTitle>
-                    <img src={works[work].imgSrc} alt={works[work].title} />
-                    <button className="repository">Repositório</button>
-                    <button className="page">Visualizar Projeto</button>
+                    <Image 
+                        src={works[work].imgSrc}
+                        alt={works[work].title}
+                        width={1920}
+                        height={1080}
+                        priority
+                    />
+                    <a className="repository" href={works[work].repSrc} target="_blank">Repositório</a>
+                    <a className="page" href={works[work].pagSrc} target="_blank">Visualizar Projeto</a>
                 </div>
             )
         }

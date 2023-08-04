@@ -8,6 +8,7 @@ import { CSSIcon } from "../icons/cssIcon"
 import { ReactIcon } from "../icons/reactIcon"
 import { GitIcon } from "../icons/gitIcon"
 import { TypescriptIcon } from "../icons/typescriptIcon"
+
 export function Technologies(){
     const works = {
         'HTML':{
