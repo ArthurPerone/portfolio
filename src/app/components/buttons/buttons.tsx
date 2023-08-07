@@ -2,23 +2,27 @@ import "./buttons.scss"
 import { EmailIcon } from "../icons/emailIcon"
 import { GithubIcon } from "../icons/githubIcon"
 import { LinkedinIcon } from "../icons/linkedinIcon"
+import { WhatsappIcon } from "../icons/whatsappIcon"
 
 
 export function Buttons(){
     return(
         <div className="buttons">
             <div className="social">
-                <a href="https://www.linkedin.com/in/arthur-perone-barbosa-832930199/" target="_blank">
+                <a  href="https://www.linkedin.com/in/arthur-perone-barbosa-832930199/" aria-label="Linkedin" target="_blank">
                     <LinkedinIcon />
                 </a>
-                <a href="https://github.com/ArthurPerone" target="_blank">
+                <a href="https://github.com/ArthurPerone" aria-label="github" target="_blank">
                     <GithubIcon />
                 </a>
+                <a href="" aria-label="whatsapp" target="_blank">
+                    <WhatsappIcon />
+                </a>
             </div>
-            <button>
+            <a id="email" href="mailto:arthur.b.perone@outlook.com" aria-label="email" target="_blank">
                 Email
                 <EmailIcon />
-            </button>
+            </a>
         </div>
     )
 }

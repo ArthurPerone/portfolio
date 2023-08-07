@@ -21,26 +21,26 @@ export function Projects(){
         },
         'autenticador': {
             imgSrc:'/projects/autentificador.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'#',
+            pagSrc:'#',
             title:'Sistema de Autentificação',
         },
         'toDoList': {
             imgSrc:'/projects/lista-de-tarefas.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'#',
+            pagSrc:'#',
             title: 'Lista de Tarefas',
         },
         'cloneflix': {
             imgSrc:'/projects/cloneflix.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'#',
+            pagSrc:'#',
             title: 'Cloneflix',
         },
         'ticTacToe': {
             imgSrc:'/projects/jogo-da-velha.jpg',
-            repSrc:'',
-            pagSrc:'',
+            repSrc:'#',
+            pagSrc:'#',
             title: 'Jogo da Velha',
         }
     }

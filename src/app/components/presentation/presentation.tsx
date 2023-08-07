@@ -7,7 +7,7 @@ export function Presentation(){
         <div className="presentation">
             <div>
                 <h1>Olá, eu sou Arthur</h1>
-                <h2>Desenvolvedor FrontEnd Jr.</h2>
+                <h2>Desenvolvedor Web FrontEnd Jr.</h2>
             </div>
             <Image 
                 src = "/profile.jpg"
