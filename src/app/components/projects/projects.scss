@@ -47,9 +47,15 @@
                 height: 100%;
             }
             a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 text-decoration: none;
+                width: 90%;
                 border: 0;
                 height: 2rem;
+                font-size: 10px;
                 background-color: var(--btn-bg);
                 color: var(--btn-text);
             }
@@ -76,6 +82,7 @@
                     border: 3px solid white;
                 }
                 a{
+                    font-size: 18px;
                     margin: auto;
                     width: 80%;
                 }
