@@ -15,7 +15,7 @@ export function Buttons(){
                 <a href="https://github.com/ArthurPerone" aria-label="github" target="_blank">
                     <GithubIcon />
                 </a>
-                <a href="" aria-label="whatsapp" target="_blank">
+                <a href="https://wa.me/5511917031002" aria-label="whatsapp" target="_blank">
                     <WhatsappIcon />
                 </a>
             </div>
