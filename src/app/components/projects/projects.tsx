@@ -12,36 +12,42 @@ export function Projects(){
             repSrc:'https://github.com/ArthurPerone/calculadora',
             pagSrc:'https://calculadora-phi-brown.vercel.app',
             title:'Calculadora',
+            display:"none",
         },
         'qrCode':{
             imgSrc:'/projects/gerador-QRCode.jpg',
             repSrc:'https://github.com/ArthurPerone/QrCode-Generator',
             pagSrc:'https://qr-code-generator-nine-tau.vercel.app',
             title:'Gerador de QR-Code',
+            display:"none",
         },
         'autenticador': {
             imgSrc:'/projects/autentificador.jpg',
             repSrc:'#',
             pagSrc:'#',
             title:'Sistema de Autentificação',
+            display:"flex",
         },
         'toDoList': {
             imgSrc:'/projects/lista-de-tarefas.jpg',
             repSrc:'#',
             pagSrc:'#',
             title: 'Lista de Tarefas',
+            display:"flex",
         },
         'cloneflix': {
             imgSrc:'/projects/cloneflix.jpg',
             repSrc:'#',
             pagSrc:'#',
             title: 'Cloneflix',
+            display:"flex",
         },
         'ticTacToe': {
             imgSrc:'/projects/jogo-da-velha.jpg',
-            repSrc:'#',
-            pagSrc:'#',
+            repSrc:'https://github.com/ArthurPerone/ticTacToe',
+            pagSrc:'https://tic-tac-toe-three-olive.vercel.app',
             title: 'Jogo da Velha',
+            display:"none",
         }
     }
     function work(){
@@ -50,6 +56,9 @@ export function Projects(){
             listWorks.push(
                 <div className="work">
                     <ItemTitle text={works[work].title}></ItemTitle>
+                        <div className="emBreve" style={{display: works[work].display}}>
+                            <h3>Em Breve</h3>
+                        </div>
                     <Image 
                         src={works[work].imgSrc}
                         alt={works[work].title}
@@ -61,6 +70,9 @@ export function Projects(){
                     <a className="page" href={works[work].pagSrc} target="_blank">Visualizar Projeto</a>
                 </div>
             )
+        }
+        
+        for(let i=0;i<listWorks.length;i++){
         }
         return(
             listWorks
